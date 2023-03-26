@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="slider.css" rel="stylesheet" />
+    <title></title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <div id="logo">
+                    SKY BLUE
+                </div>
+                <div class="text-nav">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#plot"> Cốt truyện</a></li>
+                        <li><a href="#product">Sản phẩm</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="slider">
+            <div id="slider">
+                <!-- Các thẻ div chứa ảnh -->
+                <div class="slide active" style="background-image: url(img/anh1.webp);">
+                    <div class="slide-text">Luffy Mũ Rơm, Shanks Tóc Đỏ</div>
+                </div>
+                <div class="slide" style="background-image: url('img/anh2.jpg');">
+                    <div class="slide-text">Siêu sao ca nhạc UTA</div>
+                </div>
+                <div class="slide" style="background-image: url('img/anh3.webp');">
+                    <div class="slide-text">Luffy Mũ Rơm và hành trình mới</div>
+                </div>
+        
+                <!-- Các nút điều hướng -->
+                <div class="control prev" onclick="prevSlide()">&#10094;</div>
+                <div class="control next" onclick="nextSlide()">&#10095;</div>
+            </div>
+        
+            <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('#slider .slide');
+        
+                // Hàm chuyển đổi đến slide kế tiếp
+                function nextSlide() {
+                    slides[slideIndex].classList.remove('active');
+                    slideIndex = (slideIndex + 1) % slides.length;
+                    slides[slideIndex].classList.add('active');
+                }
+        
+                // Hàm chuyển đổi đến slide trước đó
+                function prevSlide() {
+                    slides[slideIndex].classList.remove('active');
+                    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+                    slides[slideIndex].classList.add('active');
+                }
+        
+                // Hàm tự động chuyển đổi slide sau 3s
+                function autoSlide() {
+                    nextSlide();
+                    setTimeout(autoSlide, 3000);
+                }
+        
+                autoSlide();
+            </script>
+        </div>
+        <div id="main">
+            <div class="haiben">
+                <a href="https://shopee.vn/M%C3%B4-H%C3%ACnh-Nh%C3%A2n-V%E1%BA%ADt-Luffy-One-Piece-g5-Series-GK-Mingge-Red-Haired-g5-i.867175760.21172907036?sp_atk=5dc2e63d-20fa-4e02-81cf-d9aaa19764cf&xptdk=5dc2e63d-20fa-4e02-81cf-d9aaa19764cf">
+                    <div class="advertising">
+                        <marquee direction ="down">
+                            <img src="img/Pic_8.jpg">
+                            <img src="img/Pic_9.jpg">
+                            <img src="img/Pic_10.jpg">
+                            <img src="img/Pic_11.jpg">
+                            <img src="img/Pic_12.jpg">
+                            <img src="img/Pic_13.jpg">
+                            <img src="img/Pic_14.jpg">
+                        </marquee>  
+                    </div>
+
+                </a>
+                
+
+
+            </div>
+            
+            <div class="khung-noidung">
+                <a name="plot"></a>
+               
+
+                <div class="noi-dung-them">
+                    <h1><strong>CỐT TRUYỆN</strong></h1>
+                </div>
+
+                <div class="noidung">
+
+                    <div class="anh">
+                        <img src="img/anh4.jpg" width="100%" height="100%" />
+                    </div>
+                    <div class="chu">
+                        <p><strong>One Piece Film Red</strong> kể về chuyến phiêu lưu của Mũ Rơm và đồng đội đến hòn đảo Elegia.Ở đó Luffy gặp lại <strong>Uta</strong>, một người bạn thời ấu thơ của mình.</p>
+                    </div>
+                </div>
+                <div class="noidung">
+                    <div class="chu-2">
+                        <p>Và <strong>Uta</strong> mời cả nhóm xem cô trình diễn và biết được <strong>Uta</strong> là con của Shank và vô cùng căm ghét hải tặc.</p>
+                    </div>
+                    <div class="anh-2">
+                        <img src="img/img/anh6.jpg" width="100%" height="100%" />
+                    </div>
+                </div>
+                <div class="noidung">
+                    <div class="anh">
+                        <img src="img/img/anh7.png" width="100%" height="100%" />
+                    </div>
+                    <div class="chu">
+                        <p>Nội dung chính xoay quanh việc nhiều thế lực cùng hợp sức lại để có thể chống lại sức mạnh cực kì khủng khiếp đến từ <strong>Uta</strong>,trong đó có cả Shank</p>
+                    </div>
+                </div>
+                <div class="noidung">
+                    <div class="chu-2">
+                        <p>Cuối cùng thì Luffy hợp lực cùng Shank và kết thúc trận chiến, giải thoát mọi người và bảo vệ được <strong>Uta</strong> khỏi thế lực đứng đằng sau giật dây.</p>
+                    </div>
+                    <div class="anh-2">
+                        <img src="img/img/anh8.jpeg" width="100%" height="100%" />
+                    </div>
+                </div>
+                <div class="noidung">
+                    <div class="chu-2">
+                        <p>Đến với <strong>One Piece Film Red</strong> bạn sẽ được trải nghiệm những ca khúc cực kì hoành tráng và kích thích cảm xúc đến cùng cực</p>
+                    </div>
+                    <div class="anh-2">
+                        <img src="img/anh5.jpg" width="100%" height="100%" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="haiben">
+                <a href="https://shopee.vn/Poster-l%E1%BB%87nh-truy-n%C3%A3-One-Piece-Luffy-gear-5-nika-gi%E1%BA%A5y-kraft-poster-vintage-d%C3%A1n-t%C6%B0%E1%BB%9Dng-ph%C3%B2ng-ng%E1%BB%A7-MS-327-P2-i.276927580.19444434621?sp_atk=f068a1fd-6e3f-412e-b7a3-59b2823ae048&xptdk=f068a1fd-6e3f-412e-b7a3-59b2823ae048">
+                    <div class="advertising">
+                        <marquee direction ="down">
+                            <img src="img/Pic_15.jpg">
+                            <img src="img/Pic_16.jpg">
+                            <img src="img/Pic_17.jpg">
+                            <img src="img/Pic_18.jpg">
+                            <img src="img/Pic_19.jpg">
+                            <img src="img/Pic_20.jpg">
+                            <img src="img/Pic_21.jpg">
+                        </marquee>  
+                    </div>
+                </a>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="sanpham">
+            <a name="product"></a>
+            <div class="chu-sanpham">
+                <h1><strong>SẢN PHẨM</strong></h1>
+            </div>
+            <div class="sanpham-chu">
+                <p><i>Là một fan của manga, chúng ta luôn muốn cho mọi người thấy về những thứ mình thích. Chúng ta thường chia sẻ cho bạn bè là phần nhiều, những thứ như tượng, poster, album…Nhưng để cho bạn bè ta biết ta thích gì, đôi khi ta không cần phải
+                    khoe, bởi vì sao: Trên tay tôi đang có thứ rất hay. Tôi xin giới thiệu một sản phẩm vô cùng chất lượng, đó là chiếc áo limited one piece red. Kèm theo đó là ốp điện thoại iphone, cùng với bình đựng nước in hình one piece red cho những
+                    người yêu thích bộ truyện này. <div class="doi-mau-chu"> (bạn mua hàng vui lòng kick vào ảnh sản phẩm muốn mua)</div></i></p>
+
+            </div>
+
+            <div class="sanpham-hinh">
+                <div class="khung-spham">
+                    <div class="chia2-khung">
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/A9k4k7WpdI"><img src="img/img/anh9.1.jpg" width="100%" height="100%" /></a>
+                        </div>
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/A9k4k7WpdI"><img src="img/img/anh9.2.jpg" width="100%" height="100%" /></a>
+                        </div>
+                    </div>
+                    <div class="chia2-khung">
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/A9k4k7WpdI"><img src="img/img/anh9.3.jpg" width="100%" height="100%" /></a>
+                        </div>
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/A9k4k7WpdI"><img src="img/img/anh9.4.jpg" width="100%" height="100%" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="khung-spham">
+                    <div class="chia2-khung">
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/9KAxkjalhh"><img src="img/img/anh10.jpg" width="100%" height="100%" /></a>
+                        </div>
+                        <div class="hinh-link">
+                            <a href="https://shope.ee/2AhnDbB4eg"><img src="img/img/anh11.jpg" width="100%" height="100%" /></a>
+                        </div>
+                    </div>
+                    <div class="chia2-khung">
+                        <div class="hinh-link">
+                            <a href="https://shp.ee/uhdhtk8"><img src="img/img/anh12.jpg" width="100%" height="100%" /></a>
+                        </div>
+                        <div class="hinh-link">
+                            <a href="https://shp.ee/tuci278"><img src="img/img/anh13.jpg" width="100%" height="100%" /></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+   
+        <a href="https://shp.ee/tuci278">
+             <div class="advertising-bot"> 
+                <marquee >
+                    <img src="img/Pic_1.jpg">
+                    <img src="img/Pic_2.jpg">
+                    <img src="img/Pic_3.jpg">
+                    <img src="img/Pic_4.jpg">
+                    <img src="img/Pic_5.jpg">
+                    <img src="img/Pic_6.jpg">
+                    <img src="img/Pic_7.jpg">
+                </marquee>  
+            </div>
+        </a>
+       
+<footer>
+    <div class="lien-he">
+        <a name ="contact"></a>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Tên:
+                <input type="text" id="name" name="name"></label>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:
+                <input type="email" id="email" name="email"></label>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:
+                <input type="text" id="address" name="address"></label>
+            </div>
+            <div class="form-group">
+                <label for="message">Nội dung tin nhắn:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+        <script src="lienhe.js"></script>
+    </div>
+    <div class="hinh-lienhe">
+        <img src="img/one-piece-red-imax-movie-poster.webp" height="100%" >
+    </div>
+</footer>
+
+</body>
+
+</html>

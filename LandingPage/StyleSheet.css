@@ -1,0 +1,272 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #a8e0ff;
+    margin: auto;
+}
+
+nav {
+    width: 1040px;
+    margin: auto;
+    display: flex;
+}
+
+#logo {
+    flex: 2;
+    height: 54px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+    color: #0054D3;
+}
+
+.text-nav {
+    padding: 2%;
+    flex: 3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-nav ul {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    list-style: none;
+}
+
+.text-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#main {
+    margin: auto;
+    height: 1400px;
+    width: 1440px;
+    display: flex;
+}
+
+.advertising img {
+    height: 200px;
+    width: 200px;
+}
+
+.advertising {
+    width: 200px;
+    height: 1400px;
+    overflow: hidden;
+    float: left;
+}
+
+.advertising-bot img {
+    height: 200px;
+    width: 200px;
+}
+
+.advertising-bot {
+    width: 1440px;
+    height: 200px;
+    margin: auto;
+}
+
+#main .haiben {
+    width: 200px;
+    /*    background-color:darkviolet;*/
+}
+
+#main .khung-noidung {
+    height: 882px;
+    width: 1400px;
+    /*    background-color:crimson;*/
+}
+
+.khung-noidung .noidung {
+    width: 1040px;
+    height: 209px;
+    margin-top: 32px;
+    background-color: rgba(177, 221, 241, 0.63);
+    display: flex;
+}
+
+.khung-noidung .noidung .anh {
+    /*    background-color:brown;*/
+    width: 333px;
+    height: 209px;
+    margin-left: 90px;
+}
+
+.khung-noidung .noi-dung-them {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgba(177, 221, 241, 0.63);
+}
+
+.khung-noidung .noi-dung-them h1 {
+    text-align: center;
+}
+
+.khung-noidung .noidung .chu {
+    width: 509px;
+    height: 144px;
+    margin-left: 21px;
+    margin-top: 33px;
+    /*    background-color:floralwhite;*/
+}
+
+.khung-noidung .noidung .chu-2 {
+    width: 509px;
+    height: 117px;
+    margin-top: 45px;
+    margin-left: 89px;
+    /*    background-color: floralwhite;*/
+}
+
+.khung-noidung .noidung .anh-2 {
+    width: 333px;
+    height: 209px;
+    margin-left: 21px;
+    /*    background-color:chartreuse;*/
+}
+
+.khung-noidung .noidung p {
+    font-family: Inter;
+    /*tao không tìm ra fornt chữ :((*/
+    font-size: 24px;
+    vertical-align: top;
+    text-align: left;
+    line-height: 29.05px;
+    text-decoration: none;
+}
+
+.doi-mau-chu {
+    color: red;
+    text-align: center;
+    line-height: 31px;
+    font-size: 26px;
+    font-family: Inter;
+}
+
+.sanpham {
+    margin: auto;
+    height: 1024px;
+    width: 1440px;
+    background-color: rgba(177, 221, 241, 0.63);
+}
+
+.sanpham .chu-sanpham {
+    width: 100%;
+    height: 80px;
+    /* background-color: #45a049; */
+}
+
+.sanpham .chu-sanpham h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.sanpham .sanpham-chu {
+    width: 100%;
+    height: 180px;
+    /* background-color: burlywood; */
+    margin: 0 auto;
+    margin-bottom: 49px;
+}
+
+.sanpham .sanpham-chu p {
+    text-align: center;
+    line-height: 31px;
+    font-size: 26px;
+    font-family: Inter;
+}
+
+.sanpham .sanpham-hinh {
+    width: 1040px;
+    height: 668px;
+    margin: 0 auto;
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.sanpham-hinh .khung-spham {
+    width: 500px;
+    height: 668px;
+    background-color: greenyellow;
+}
+
+.khung-spham .hinh-link {
+    width: 250px;
+    height: 334px;
+}
+
+.chia2-khung {
+    width: 500px;
+    height: 334px;
+    display: flex;
+    align-content: flex-start;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* background-color: #0054D3; */
+}
+
+footer .lien-he {
+    width: 50%;
+    height: 400px;
+    background-color: rgba(177, 221, 241, 0.63);
+}
+
+.form-group {
+    margin-bottom: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #001aff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer .hinh-lienhe {
+    width: 50px;
+    height: 400px;
+}
